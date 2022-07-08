@@ -1,0 +1,16 @@
+.Header {
+  background-color: silver;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.Navbar {
+  list-style: none;
+  display: flex;
+}
+
+.Navbar li {
+  padding: 0% 3%;
+}
