@@ -1,0 +1,22 @@
+.Content {
+  padding: 2rem 10%;
+}
+
+.ContentLeft {
+  display: inline-flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.ContentMain {
+  display: inline-flex;
+  flex-direction: column;
+  width: calc(60% - 4rem);
+  padding: 0rem 2rem;
+}
+
+.ContentRight {
+  display: inline-flex;
+  flex-direction: column;
+  width: 20%;
+}

@@ -1,15 +1,15 @@
-import "./App.css";
-import { Footer } from "../../common/footer/Footer";
-import { Header } from "../../common/header/Header";
+import styles from "./App.css";
+import { Page } from "../../common/page/Page";
 
 function App() {
+  const { App } = styles;
   return (
-    <div className="App">
-      <Header></Header>
-      {/* Temporary */}
-      <p className="Interim">THIS WEBSITE IS UNDER DEVELOPMENT</p>
-
-      <Footer></Footer>
+    <div className={App}>
+      <Page
+        contentLeft={<p>This is the homepage</p>}
+        contentMain={<p>Main Content</p>}
+        contentRight={<p>Right sidebar</p>}
+      />
     </div>
   );
 }
