@@ -1,4 +1,5 @@
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const { Header, Navbar } = styles;
@@ -6,16 +7,15 @@ export function Header() {
   return (
     <div className={Header}>
       <h1>Edward Park</h1>
-      {/* TODO figure out routing: react-router-dom? */}
       <ul className={Navbar}>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="/resources">Resources</a>
+          <Link to="/resources">Resources</Link>
         </li>
       </ul>
     </div>

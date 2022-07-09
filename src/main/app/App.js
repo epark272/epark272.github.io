@@ -1,6 +1,6 @@
 import "./App.css";
-import { Footer } from "./common/footer/Footer";
-import { Header } from "./common/header/Header";
+import { Footer } from "../../common/footer/Footer";
+import { Header } from "../../common/header/Header";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Header></Header>
       {/* Temporary */}
       <p className="Interim">THIS WEBSITE IS UNDER DEVELOPMENT</p>
+
       <Footer></Footer>
     </div>
   );
