@@ -1,10 +1,6 @@
-.Footer {
+.Component {
   background-color: silver;
   display: flex;
   flex-direction: column;
   padding: 2rem 10%;
-}
-
-.Footer p {
-  color: black;
 }

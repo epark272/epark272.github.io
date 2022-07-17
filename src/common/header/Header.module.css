@@ -1,4 +1,4 @@
-.Header {
+.Component {
   background-color: silver;
   display: flex;
   flex-direction: row;
@@ -16,8 +16,4 @@
   display: flex;
   align-items: center;
   margin: 0rem 0rem 0rem 1rem;
-}
-
-.Navbar a {
-  text-decoration: none;
 }

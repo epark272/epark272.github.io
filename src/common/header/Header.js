@@ -2,10 +2,10 @@ import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 
 export function Header() {
-  const { Header, Navbar } = styles;
+  const { Component, Navbar } = styles;
 
   return (
-    <div className={Header}>
+    <div className={Component}>
       <h1>Edward Park</h1>
       <ul className={Navbar}>
         <li>

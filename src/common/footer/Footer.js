@@ -1,10 +1,10 @@
 import styles from "./Footer.module.css";
 
 export function Footer() {
-  const { Footer } = styles;
+  const { Component } = styles;
 
   return (
-    <div className={Footer}>
+    <div className={Component}>
       <p>Copyright © 2022-{new Date().getFullYear()} Edward Park</p>
       <p>
         View this page on{" "}
