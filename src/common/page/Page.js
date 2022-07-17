@@ -3,7 +3,7 @@ import { Header } from "../header/Header";
 import { Footer } from "../footer/Footer";
 
 export function Page(props) {
-  const { Page, Content, ContentLeft, ContentMain, ContentRight } = styles;
+  const { Content, ContentLeft, ContentMain, ContentRight } = styles;
 
   return (
     <div className={Page}>

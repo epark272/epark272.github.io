@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import App from "./main/app/App";
+import Home from "./main/home/Home";
 import About from "./main/about/About";
+import Resources from "./main/resources/Resources";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -11,8 +12,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="resources" element={<Resources />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

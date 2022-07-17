@@ -1,10 +1,8 @@
-import styles from "./App.css";
 import { Page } from "../../common/page/Page";
 
-function App() {
-  const { App } = styles;
+function Home() {
   return (
-    <div className={App}>
+    <div className={Home}>
       <Page
         contentLeft={<p>This is the homepage</p>}
         contentMain={<p>Main Content</p>}
@@ -14,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

@@ -1,3 +1,29 @@
+:root {
+  /* Absolute Spacing */
+  --no-space: 0rem;
+  --small-space: 1rem;
+  --medium-space: 2rem;
+  --large-space: 4rem;
+
+  /* Relative Spacing */
+
+  /* Background Color */
+  --primary: red; /* Can include light and dark variants of primary and secondary */
+  --primary-variant: orange;
+  --secondary: yellow;
+  --secondary-variant: green;
+  --background: blue;
+  --surface: purple;
+  --error: brown;
+
+  /* Text color */
+  --on-primary: pink;
+  --on-secondary: gray;
+  --on-background: brown;
+  --on-surface: white;
+  --on-error: black;
+}
+
 html,
 body,
 div,
