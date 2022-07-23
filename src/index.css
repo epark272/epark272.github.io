@@ -4,6 +4,9 @@
   --small-space: 1rem;
   --medium-space: 2rem;
   --large-space: 4rem;
+  --small-block: 16rem;
+  --medium-block: 32rem;
+  --large-block: 48rem;
 
   /* Relative Spacing */
 
@@ -56,9 +59,17 @@ a {
 }
 
 a:visited {
-  color: purple;
+  color: rgb(0, 0, 238);
 }
 
 a:hover {
   color: crimson;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 400;
 }
