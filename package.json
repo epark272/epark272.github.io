@@ -1,7 +1,7 @@
 {
-  "name": "epark272.github.io",
+  "name": "edwardpark.org",
   "version": "0.1.0",
-  "homepage": "https://epark272.github.io/",
+  "homepage": "https://edwardpark.org/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
