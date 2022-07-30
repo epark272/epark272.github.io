@@ -22,13 +22,17 @@ function Home() {
                 <a
                   href="https://inst.eecs.berkeley.edu/~cs61b/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   CS 61B
                 </a>
                 , Berkeley's data structures class. I maintain a list of
                 unofficial course resources{" "}
-                <a href="cs61b.edwardpark.org" target="_blank" rel="noreferrer">
+                <a
+                  href="cs61b.edwardpark.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   here
                 </a>
                 .
@@ -38,7 +42,7 @@ function Home() {
                 <a
                   href="https://www.capitalone.com/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   Capital One
                 </a>{" "}
@@ -46,7 +50,7 @@ function Home() {
                 <a
                   href="https://www.linkedin.com/in/naveena-premkrishna/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   Naveena Premkrishna
                 </a>
@@ -58,7 +62,7 @@ function Home() {
                 <a
                   href="https://www.typescriptlang.org/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   TypeScript
                 </a>
@@ -70,7 +74,7 @@ function Home() {
                 <a
                   href="https://aws.amazon.com/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   AWS
                 </a>
@@ -81,7 +85,7 @@ function Home() {
                 <a
                   href="https://asuc.org/berkeley-mobile/"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   Berkeley Mobile
                 </a>
@@ -101,44 +105,21 @@ function Home() {
               </thead>
               <tbody>
                 <tr>
-                  <th rowspan="5">Fall 2020</th>
-                  <td>COMPSCI 61A</td>
-                  <td>The Structure and Interpretation of Computer Programs</td>
+                  <th rowspan="4">Spring 2022</th>
+                  <td>COMPSCI 186</td>
+                  <td>Introduction to Database Systems</td>
                 </tr>
                 <tr>
-                  <td>EECS 16A</td>
-                  <td>Designing Information Devices and Systems I</td>
+                  <td>COMPSCI 188</td>
+                  <td>Introduction to Artificial Intelligence</td>
                 </tr>
                 <tr>
-                  <td>MATH 54</td>
-                  <td>Linear Algebra and Differential Equations</td>
+                  <td>COMPSCI 375</td>
+                  <td>Teaching Techniques for Computer Science</td>
                 </tr>
                 <tr>
-                  <td>PHYSICS 5B</td>
-                  <td>Introductory Electromagnetism, Waves, and Optics</td>
-                </tr>
-                <tr>
-                  <td>PHYSICS 5BL</td>
-                  <td>Introduction to Experimental Physics I</td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <th rowspan="4">Spring 2021</th>
-                  <td>COLWRIT R4B</td>
-                  <td>Reading, Composition, and Research</td>
-                </tr>
-                <tr>
-                  <td>COMPSCI 61B</td>
-                  <td>Data Structures</td>
-                </tr>
-                <tr>
-                  <td>EECS 16B</td>
-                  <td>Designing Information Devices and Systems II</td>
-                </tr>
-                <tr>
-                  <td>SOCIOL 3AC</td>
-                  <td>Principles of Sociology: American Cultures</td>
+                  <td>ELENG 120</td>
+                  <td>Signals and Systems</td>
                 </tr>
               </tbody>
               <tbody>
@@ -164,21 +145,44 @@ function Home() {
               </tbody>
               <tbody>
                 <tr>
-                  <th rowspan="4">Spring 2022</th>
-                  <td>COMPSCI 186</td>
-                  <td>Introduction to Database Systems</td>
+                  <th rowspan="4">Spring 2021</th>
+                  <td>COLWRIT R4B</td>
+                  <td>Reading, Composition, and Research</td>
                 </tr>
                 <tr>
-                  <td>COMPSCI 188</td>
-                  <td>Introduction to Artificial Intelligence</td>
+                  <td>COMPSCI 61B</td>
+                  <td>Data Structures</td>
                 </tr>
                 <tr>
-                  <td>COMPSCI 375</td>
-                  <td>Teaching Techniques for Computer Science</td>
+                  <td>EECS 16B</td>
+                  <td>Designing Information Devices and Systems II</td>
                 </tr>
                 <tr>
-                  <td>ELENG 120</td>
-                  <td>Signals and Systems</td>
+                  <td>SOCIOL 3AC</td>
+                  <td>Principles of Sociology: American Cultures</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th rowspan="5">Fall 2020</th>
+                  <td>COMPSCI 61A</td>
+                  <td>The Structure and Interpretation of Computer Programs</td>
+                </tr>
+                <tr>
+                  <td>EECS 16A</td>
+                  <td>Designing Information Devices and Systems I</td>
+                </tr>
+                <tr>
+                  <td>MATH 54</td>
+                  <td>Linear Algebra and Differential Equations</td>
+                </tr>
+                <tr>
+                  <td>PHYSICS 5B</td>
+                  <td>Introductory Electromagnetism, Waves, and Optics</td>
+                </tr>
+                <tr>
+                  <td>PHYSICS 5BL</td>
+                  <td>Introduction to Experimental Physics I</td>
                 </tr>
               </tbody>
             </table>
@@ -190,7 +194,7 @@ function Home() {
                 <a
                   href="https://www.goodreads.com/book/show/38212124-nomadland"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   Nomadland
                 </a>{" "}
@@ -200,7 +204,7 @@ function Home() {
                 <a
                   href="https://www.goodreads.com/book/show/9126253-the-blame-game"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   The Blame Game
                 </a>{" "}
@@ -210,7 +214,7 @@ function Home() {
                 <a
                   href="https://www.goodreads.com/book/show/32191706-the-color-of-law"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   The Color of Law
                 </a>{" "}
@@ -220,7 +224,7 @@ function Home() {
                 <a
                   href="https://www.goodreads.com/book/show/31670196-scale"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   Scale
                 </a>{" "}
@@ -230,13 +234,19 @@ function Home() {
                 <a
                   href="https://www.goodreads.com/book/show/1078.The_Good_Earth"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   The Good Earth
                 </a>{" "}
                 by Pearl S. Buck
               </li>
             </ul>
+            <hr></hr>
+            <h2>Contact</h2>
+            <p>
+              My preferred method of contact is email:{" "}
+              <a href="mailto:epark2@berkeley.edu">epark2@berkeley.edu</a>.
+            </p>
           </div>
         }
       />
