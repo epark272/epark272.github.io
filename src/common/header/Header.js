@@ -19,7 +19,13 @@ export function Header() {
             <Link to="/resources">Resources</Link>
           </li> */}
           <li>
-            <Link to="cs61b.edwardpark.org">CS61B Resources</Link>
+            <a
+              href="https://cs61b.edwardpark.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CS61B Resources
+            </a>
           </li>
         </ul>
       </div>

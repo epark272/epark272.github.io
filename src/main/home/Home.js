@@ -29,7 +29,7 @@ function Home() {
                 , Berkeley's data structures class. I maintain a list of
                 unofficial course resources{" "}
                 <a
-                  href="cs61b.edwardpark.org"
+                  href="https://cs61b.edwardpark.org"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
