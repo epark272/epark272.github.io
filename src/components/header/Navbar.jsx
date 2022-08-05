@@ -26,7 +26,7 @@ function Navbar(props) {
           onClick={() =>
             window.open(
               "https://cs61b.edwardpark.org",
-              "_blank",
+              "_self",
               "noopener",
               "noreferrer"
             )
