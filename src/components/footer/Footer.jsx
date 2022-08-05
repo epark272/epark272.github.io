@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="Footer w-full bg-white flex flex-col justify-between p-2 border-t border-slate-400">
+    <div className="Footer w-full bg-white flex flex-col justify-between text-center p-2 border-t border-slate-400">
       <p className="text-sm text-slate-500">
         Copyright © 2022-{new Date().getFullYear()} Eddie Park
       </p>
