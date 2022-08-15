@@ -10,7 +10,6 @@ function Footer() {
           href="https://github.com/epark272/epark272.github.io"
           target="_self"
           rel="noopener noreferrer"
-          className="text-blue-600 active:underline"
         >
           GitHub
         </a>

@@ -21,7 +21,7 @@ function Header() {
   });
 
   return (
-    <div className="Header ">
+    <div className="Header">
       <Topbar
         condensedClickHandler={() => {
           setMenuIsExpanded(!menuIsExpanded);
