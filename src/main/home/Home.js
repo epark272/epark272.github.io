@@ -1,5 +1,5 @@
-import styles from "./Home.module.css";
 import { Page } from "../../common/page/Page";
+import styles from "./Home.module.css";
 
 function Home() {
   const { Experience, Coursework } = styles;
@@ -105,83 +105,258 @@ function Home() {
               </thead>
               <tbody>
                 <tr>
+                  <th rowspan="3">Fall 2022</th>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/CS161/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 161
+                    </a>
+                  </td>
+                  <td>Computer Security</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/CS170/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 170
+                    </a>
+                  </td>
+                  <td>Efficient Algorithms and Intractable Problems</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2022-fall-linguis-100-001-lec-001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LINGUIS 100
+                    </a>
+                  </td>
+                  <td>Introduction to Linguistic Science</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
                   <th rowspan="4">Spring 2022</th>
-                  <td>COMPSCI 186</td>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/CS186/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 186
+                    </a>
+                  </td>
                   <td>Introduction to Database Systems</td>
                 </tr>
                 <tr>
-                  <td>COMPSCI 188</td>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/CS188/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 188
+                    </a>
+                  </td>
                   <td>Introduction to Artificial Intelligence</td>
                 </tr>
                 <tr>
-                  <td>COMPSCI 375</td>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/CS375/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 375
+                    </a>
+                  </td>
                   <td>Teaching Techniques for Computer Science</td>
                 </tr>
                 <tr>
-                  <td>ELENG 120</td>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/EE120/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ELENG 120
+                    </a>
+                  </td>
                   <td>Signals and Systems</td>
                 </tr>
               </tbody>
               <tbody>
                 <tr>
                   <th rowspan="4">Fall 2021</th>
-                  <td>ASAMST 150</td>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2021-fall-asamst-150-001-lec-001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ASAMST 150
+                    </a>
+                  </td>
                   <td>Gender and Generation in Asian American Families</td>
                 </tr>
                 <tr>
-                  <td>COMPSCI 61C</td>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/CS61C/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 61C
+                    </a>
+                  </td>
                   <td>
                     Great Ideas of Computer Architecture (Machine Structures)
                   </td>
                 </tr>
                 <tr>
-                  <td>COMPSCI 70</td>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/CS70/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 70
+                    </a>
+                  </td>
                   <td>Discrete Mathematics and Probability Theory</td>
                 </tr>
                 <tr>
-                  <td>PHILOS 3</td>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2021-fall-philos-3-001-lec-001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      PHILOS 3
+                    </a>
+                  </td>
                   <td>The Nature of Mind</td>
                 </tr>
               </tbody>
               <tbody>
                 <tr>
                   <th rowspan="4">Spring 2021</th>
-                  <td>COLWRIT R4B</td>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2021-spring-colwrit-r4b-004-sem-004"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COLWRIT R4B
+                    </a>
+                  </td>
                   <td>Reading, Composition, and Research</td>
                 </tr>
                 <tr>
-                  <td>COMPSCI 61B</td>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/CS61B/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 61B
+                    </a>
+                  </td>
                   <td>Data Structures</td>
                 </tr>
                 <tr>
-                  <td>EECS 16B</td>
+                  <td>
+                    <a
+                      href="https://www.eecs.berkeley.edu/Courses/EECS16B/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      EECS 16B
+                    </a>
+                  </td>
                   <td>Designing Information Devices and Systems II</td>
                 </tr>
                 <tr>
-                  <td>SOCIOL 3AC</td>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2021-spring-sociol-3ac-001-lec-001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      SOCIOL 3AC
+                    </a>
+                  </td>
                   <td>Principles of Sociology: American Cultures</td>
                 </tr>
               </tbody>
               <tbody>
                 <tr>
                   <th rowspan="5">Fall 2020</th>
-                  <td>COMPSCI 61A</td>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/CS61A/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 61A
+                    </a>
+                  </td>
                   <td>The Structure and Interpretation of Computer Programs</td>
                 </tr>
                 <tr>
-                  <td>EECS 16A</td>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/EECS16A/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      EECS 16A
+                    </a>
+                  </td>
                   <td>Designing Information Devices and Systems I</td>
                 </tr>
                 <tr>
-                  <td>MATH 54</td>
+                  <td>
+                    <a
+                      href="https://math.berkeley.edu/courses/choosing/lowerdivcourses/math54"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      MATH 54
+                    </a>
+                  </td>
                   <td>Linear Algebra and Differential Equations</td>
                 </tr>
                 <tr>
-                  <td>PHYSICS 5B</td>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2020-fall-physics-5b-001-lec-001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      PHYSICS 5B
+                    </a>
+                  </td>
                   <td>Introductory Electromagnetism, Waves, and Optics</td>
                 </tr>
                 <tr>
-                  <td>PHYSICS 5BL</td>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2020-fall-physics-5bl-101-lab-101"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      PHYSICS 5BL
+                    </a>
+                  </td>
                   <td>Introduction to Experimental Physics I</td>
                 </tr>
               </tbody>
@@ -209,16 +384,6 @@ function Home() {
                   The Blame Game
                 </a>{" "}
                 by Ben Dattner {"&"} Darren Dahl
-              </li>
-              <li>
-                <a
-                  href="https://www.goodreads.com/book/show/32191706-the-color-of-law"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  The Color of Law
-                </a>{" "}
-                by Richard Rothstein
               </li>
               <li>
                 <a
