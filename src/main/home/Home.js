@@ -10,7 +10,7 @@ function Home() {
         contentMain={
           <div>
             <p>
-              I am a third year undergraduate student at the University of
+              I am a fourth year undergraduate student at the University of
               California, Berkeley, studying EECS. I like to teach data
               structures, read books, and learn cool stuff!
             </p>
@@ -38,7 +38,7 @@ function Home() {
                 .
               </li>
               <li>
-                I am at{" "}
+                I worked at{" "}
                 <a
                   href="https://www.capitalone.com/"
                   target="_blank"
@@ -103,6 +103,57 @@ function Home() {
                   <th>Title</th>
                 </tr>
               </thead>
+              <tbody>
+                <tr>
+                  <th rowspan="4">Spring 2023</th>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/CS162/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 162
+                    </a>
+                  </td>
+                  <td>Operating Systems and System Programming</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://eecs.berkeley.edu/Courses/CS195/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 195
+                    </a>
+                  </td>
+                  <td>Social Implications of Computer Technology</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2023-spring-hum-120-001-lec-001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      HUM 120
+                    </a>
+                  </td>
+                  <td>Entrepreneurship for All: An Insiders' Guide to Startups</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2023-spring-ugba-105-001-lec-001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      UGBA 105
+                    </a>
+                  </td>
+                  <td>Leading People</td>
+                </tr>
+              </tbody>
               <tbody>
                 <tr>
                   <th rowspan="3">Fall 2022</th>
