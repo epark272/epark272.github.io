@@ -1,26 +1,28 @@
 import { useNavigate } from "react-router-dom";
-import StyledButton from "../button/StyledButton";
 
 function Navbar(props) {
   const navigate = useNavigate();
 
+  const buttonStyle =
+    "flex items-center mx-1 my-2 px-1 border bg-blue-100 rounded-md border-transparent hover:border-blue-400 hover:drop-shadow active:border-blue-400 active:drop-shadow";
+
   if (props.isCondensed) {
     return (
       // TODO replace with hamburger icon
-      <StyledButton
+      <button
         onClick={props.condensedClickHandler}
-        className={"inline-flex"}
+        className={"inline-flex " + buttonStyle}
       >
         M
-      </StyledButton>
+      </button>
     );
   } else {
     return (
       <div className="Navbar text-xl inline-flex">
-        <StyledButton onClick={() => navigate("/")}>
+        <button onClick={() => navigate("/")} className={buttonStyle}>
           Home
-        </StyledButton>
-        <StyledButton
+        </button>
+        <button
           onClick={() =>
             window.open(
               "https://cs61b.edwardpark.org",
@@ -29,9 +31,10 @@ function Navbar(props) {
               "noreferrer"
             )
           }
+          className={buttonStyle}
         >
           CS 61B
-        </StyledButton>
+        </button>
       </div>
     );
   }
