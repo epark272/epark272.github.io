@@ -10,7 +10,7 @@ function Home() {
         contentMain={
           <div>
             <p>
-              I am a fourth year undergraduate student at the University of
+              I am a recent graduate from the University of
               California, Berkeley, studying EECS. I like to teach data
               structures, read books, and learn cool stuff!
             </p>
@@ -18,24 +18,28 @@ function Home() {
             <h2>Experience</h2>
             <ul className={Experience}>
               <li>
-                I am a TA for{" "}
+                I was a teaching assistant for{" "}
                 <a
                   href="https://inst.eecs.berkeley.edu/~cs61b/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   CS 61B
-                </a>
-                , Berkeley's data structures class. I maintain a list of
-                unofficial course resources{" "}
+                </a>{" "}
+                (Data Structures) for 5 semesters (Spring 2022, Fall 2022, 
+                Spring 2023, Fall 2023, Spring 2024) and{" "}
                 <a
-                  href="https://cs61b.edwardpark.org"
+                  href="https://inst.eecs.berkeley.edu/~cs61c/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  here
-                </a>
-                .
+                  CS 61C
+                </a>{" "}
+                (Computer Architecture) for 1 semester (Summer 2023). On top of
+                teaching duties, I have been primarily involved in exam logistics,
+                project development, and staff management. I have also been active
+                in content development, course infrastructure development, and other
+                administrative duties.
               </li>
               <li>
                 I worked at{" "}
@@ -105,10 +109,76 @@ function Home() {
               </thead>
               <tbody>
                 <tr>
+                  <th rowspan="2">Spring 2024</th>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2024-spring-compsci-168-001-lec-001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 168
+                    </a>
+                  </td>
+                  <td>Introduction to the Internet: Architecture and Protocols</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2024-spring-compsci-184-001-lec-001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI 184
+                    </a>
+                  </td>
+                  <td>Foundations of Computer Graphics</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th rowspan="3">Fall 2023</th>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2023-fall-compsci-c191-001-lec-001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      COMPSCI C191
+                    </a>
+                  </td>
+                  <td>Introduction to Quantum Computing</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2023-fall-econ-c110-001-lec-001"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ECON C110
+                    </a>
+                  </td>
+                  <td>Game Theory in the Social Sciences</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://classes.berkeley.edu/content/2023-fall-music-30-1-lec-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      MUSIC 30
+                    </a>
+                  </td>
+                  <td>Computational Creativity for Music and the Arts</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
                   <th rowspan="4">Spring 2023</th>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/CS162/"
+                      href="https://classes.berkeley.edu/content/2023-spring-compsci-162-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -120,7 +190,7 @@ function Home() {
                 <tr>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/CS195/"
+                      href="https://classes.berkeley.edu/content/2023-spring-compsci-195-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -159,7 +229,7 @@ function Home() {
                   <th rowspan="3">Fall 2022</th>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/CS161/"
+                      href="https://classes.berkeley.edu/content/2022-fall-compsci-161-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -171,7 +241,7 @@ function Home() {
                 <tr>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/CS170/"
+                      href="https://classes.berkeley.edu/content/2022-fall-compsci-170-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -198,7 +268,7 @@ function Home() {
                   <th rowspan="4">Spring 2022</th>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/CS186/"
+                      href="https://classes.berkeley.edu/content/2022-spring-compsci-186-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -210,7 +280,7 @@ function Home() {
                 <tr>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/CS188/"
+                      href="https://classes.berkeley.edu/content/2022-spring-compsci-188-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -222,7 +292,7 @@ function Home() {
                 <tr>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/CS375/"
+                      href="https://classes.berkeley.edu/content/2022-spring-compsci-375-001-dis-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -234,7 +304,7 @@ function Home() {
                 <tr>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/EE120/"
+                      href="https://classes.berkeley.edu/content/2022-spring-eleng-120-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -261,7 +331,7 @@ function Home() {
                 <tr>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/CS61C/"
+                      href="https://classes.berkeley.edu/content/2021-fall-compsci-61c-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -275,7 +345,7 @@ function Home() {
                 <tr>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/CS70/"
+                      href="https://classes.berkeley.edu/content/2021-fall-compsci-70-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -314,7 +384,7 @@ function Home() {
                 <tr>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/CS61B/"
+                      href="https://classes.berkeley.edu/content/2021-spring-compsci-61b-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -326,7 +396,7 @@ function Home() {
                 <tr>
                   <td>
                     <a
-                      href="https://www.eecs.berkeley.edu/Courses/EECS16B/"
+                      href="https://classes.berkeley.edu/content/2021-spring-eecs-16b-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -353,7 +423,7 @@ function Home() {
                   <th rowspan="5">Fall 2020</th>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/CS61A/"
+                      href="https://classes.berkeley.edu/content/2020-fall-compsci-61a-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -365,7 +435,7 @@ function Home() {
                 <tr>
                   <td>
                     <a
-                      href="https://eecs.berkeley.edu/Courses/EECS16A/"
+                      href="https://classes.berkeley.edu/content/2020-fall-eecs-16a-001-lec-001"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -377,7 +447,7 @@ function Home() {
                 <tr>
                   <td>
                     <a
-                      href="https://math.berkeley.edu/courses/choosing/lowerdivcourses/math54"
+                      href="https://classes.berkeley.edu/content/2020-fall-math-54-002-lec-002"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -460,8 +530,7 @@ function Home() {
             <hr></hr>
             <h2>Contact</h2>
             <p>
-              My preferred method of contact is email:{" "}
-              <a href="mailto:epark2@berkeley.edu">epark2@berkeley.edu</a>.
+              My preferred method of contact is email: epark2 (at) berkeley (dot) edu.
             </p>
           </div>
         }

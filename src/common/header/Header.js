@@ -1,5 +1,4 @@
 import styles from "./Header.module.css";
-import { Link } from "react-router-dom";
 
 export function Header() {
   const { Component, Content, Navbar } = styles;
@@ -9,15 +8,15 @@ export function Header() {
       <div className={Content}>
         <h1>Edward Park</h1>
         <ul className={Navbar}>
-          <li>
+          {/* <li>
             <Link to="/">Home</Link>
           </li>
-          {/* <li>
+          <li>
             <Link to="/about">About</Link>
           </li>
           <li>
             <Link to="/resources">Resources</Link>
-          </li> */}
+          </li> 
           <li>
             <a
               href="https://cs61b.edwardpark.org"
@@ -26,7 +25,7 @@ export function Header() {
             >
               CS61B Resources
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
