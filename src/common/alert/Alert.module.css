@@ -1,0 +1,12 @@
+.AlertBanner {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Darker red text */
+    border: 1px solid #721c24; /* Slightly darker red border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 12px; /* Padding inside the banner */
+    font-family: Arial, sans-serif; /* Font style */
+    font-size: 20px; /* Font size */
+    max-width: auto; /* Optional: limit the width */
+    margin:10px auto; /* Center on the page */
+    text-align: left; /* Center align the text */
+}

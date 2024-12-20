@@ -1,3 +1,4 @@
+import { Alert } from "../../common/alert/Alert";
 import { Page } from "../../common/page/Page";
 import styles from "./Home.module.css";
 
@@ -9,6 +10,7 @@ function Home() {
       <Page
         contentMain={
           <div>
+            <Alert alertText="I am in no way affiliated with @EdwardsCoded, @AkaneOnizuka, or $AKANE on X (formerly Twitter). Any attempts to use my name, likeness, credentials, achievements, or otherwise personal information for the benefit of these projects or organizations is fraudulent and should be reported to X."></Alert>
             <p>
               I am a recent graduate from the University of
               California, Berkeley, studying EECS. I like to teach data
