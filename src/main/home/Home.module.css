@@ -14,8 +14,19 @@ ul {
 .Coursework {
   table-layout: fixed;
   border-collapse: collapse;
-  width: var(--large-block);
+  width: 100%;
+  max-width: var(--large-block);
   border: solid;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .Coursework {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .Coursework thead tr {

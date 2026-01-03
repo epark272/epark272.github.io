@@ -1,28 +1,64 @@
 .Component {
   background-color: lightgray;
-  padding: 0.5rem 10%;
+  padding: 0.5rem 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .Content {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
-  width: var(--large-block);
+  width: 100%;
+  max-width: calc(var(--large-block) + 4rem);
   padding: 0rem 2rem;
+  box-sizing: border-box;
 }
 
 .Navbar {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .Navbar li {
   display: flex;
   align-items: center;
   margin: 0rem 0rem 0rem 1rem;
+}
+
+/* Tablet and smaller */
+@media screen and (max-width: 1024px) {
+  .Component {
+    padding: 0.5rem 3%;
+  }
+  
+  .Content {
+    padding: 0rem 1rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .Component {
+    padding: 0.5rem 4%;
+  }
+  
+  .Content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  
+  .Navbar {
+    margin-top: 0.5rem;
+  }
+  
+  .Navbar li {
+    margin: 0.25rem 1rem 0.25rem 0;
+  }
 }
