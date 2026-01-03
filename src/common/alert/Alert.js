@@ -1,11 +1,8 @@
-import styles from "./Alert.module.css";
-
 export function Alert(props) {
-  const { AlertBanner } = styles;
-
   return (
-    <div className={AlertBanner}>
-        <strong>Warning: </strong>{props.alertText}
+    <div className="alert alert-warning shadow-sm">
+      <span className="font-semibold">Heads up:</span>
+      <span>{props.alertText}</span>
     </div>
   );
 }

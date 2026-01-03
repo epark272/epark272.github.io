@@ -1,542 +1,609 @@
-import { Alert } from "../../common/alert/Alert";
 import { Page } from "../../common/page/Page";
-import styles from "./Home.module.css";
+
+const experience = [
+  {
+    title: "Teaching @ UC Berkeley",
+    period: "CS 61B (5 semesters) • CS 61C (1 semester)",
+    description:
+      "Led labs and discussions, built projects, and coordinated exam logistics for data structures and computer architecture.",
+    link: "https://inst.eecs.berkeley.edu/~cs61b/",
+    linkLabel: "CS 61B",
+  },
+  {
+    title: "Software Engineering Intern — Capital One",
+    period: "React • TypeScript • Node • AWS",
+    description:
+      "Shipped features across web and services alongside Naveena Premkrishna, focusing on reliability and developer ergonomics.",
+    link: "https://www.capitalone.com/",
+    linkLabel: "Capital One",
+  },
+  {
+    title: "Android Engineer — Berkeley Mobile",
+    period: "Kotlin • Campus experiences",
+    description:
+      "Built and maintained mobile features that help students find what they need around campus in seconds.",
+    link: "https://asuc.org/berkeley-mobile/",
+    linkLabel: "Berkeley Mobile",
+  },
+];
+
+const books = [
+  {
+    title: "Nomadland",
+    author: "Jessica Bruder",
+    link: "https://www.goodreads.com/book/show/38212124-nomadland",
+  },
+  {
+    title: "The Blame Game",
+    author: "Ben Dattner & Darren Dahl",
+    link: "https://www.goodreads.com/book/show/9126253-the-blame-game",
+  },
+  {
+    title: "Scale",
+    author: "Geoffrey West",
+    link: "https://www.goodreads.com/book/show/31670196-scale",
+  },
+  {
+    title: "The Good Earth",
+    author: "Pearl S. Buck",
+    link: "https://www.goodreads.com/book/show/1078.The_Good_Earth",
+  },
+];
 
 function Home() {
-  const { Experience, Coursework } = styles;
-
   return (
-    <div className={Home}>
-      <Page
-        contentMain={
-          <div>
-            <p>
-              I am a recent graduate from the University of
-              California, Berkeley, studying EECS. I like to teach data
-              structures, read books, and learn cool stuff!
-            </p>
-            <hr></hr>
-            <h2>Experience</h2>
-            <ul className={Experience}>
-              <li>
-                I was a teaching assistant for{" "}
+    <Page
+      contentLeft={
+        <div className="space-y-4">
+          <div className="card bg-base-100 shadow-xl border border-base-300">
+            <div className="card-body space-y-2">
+              <p className="badge badge-primary badge-outline w-fit">Contact</p>
+              <h3 className="card-title text-lg">Let's collaborate</h3>
+              <p className="text-sm text-base-content/70">
+                I love teaching, systems, and building thoughtful tools.
+              </p>
+              <div className="space-y-2 text-sm">
                 <a
-                  href="https://inst.eecs.berkeley.edu/~cs61b/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  className="link link-primary"
+                  href="mailto:epark2@berkeley.edu"
                 >
-                  CS 61B
-                </a>{" "}
-                (Data Structures) for 5 semesters (Spring 2022, Fall 2022, 
-                Spring 2023, Fall 2023, Spring 2024) and{" "}
-                <a
-                  href="https://inst.eecs.berkeley.edu/~cs61c/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  CS 61C
-                </a>{" "}
-                (Computer Architecture) for 1 semester (Summer 2023). On top of
-                teaching duties, I have been primarily involved in exam logistics,
-                project development, and staff management. I have also been active
-                in content development, course infrastructure development, and other
-                administrative duties.
-              </li>
-              <li>
-                I worked at{" "}
-                <a
-                  href="https://www.capitalone.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Capital One
-                </a>{" "}
-                as a software engineering intern, under{" "}
-                <a
-                  href="https://www.linkedin.com/in/naveena-premkrishna/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Naveena Premkrishna
+                  epark2@berkeley.edu
                 </a>
-                . The project included working with{" "}
-                <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-                  React
-                </a>
-                ,{" "}
-                <a
-                  href="https://www.typescriptlang.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  TypeScript
-                </a>
-                ,{" "}
-                <a href="https://nodejs.dev/" target="_blank" rel="noreferrer">
-                  Node
-                </a>
-                ,{" "}
-                <a
-                  href="https://aws.amazon.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  AWS
-                </a>
-                , and internal Capital One technologies.
-              </li>
-              <li>
-                I was on the Android team for{" "}
-                <a
-                  href="https://asuc.org/berkeley-mobile/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Berkeley Mobile
-                </a>
-                , a one-stop shop for Berkeley students to get the information
-                they need.
-              </li>
-            </ul>
-            <hr></hr>
-            <h2>Coursework</h2>
-            <table className={Coursework}>
-              <thead>
-                <tr>
-                  <th>Term</th>
-                  <th>Class</th>
-                  <th>Title</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th rowspan="2">Spring 2024</th>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2024-spring-compsci-168-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 168
-                    </a>
-                  </td>
-                  <td>Introduction to the Internet: Architecture and Protocols</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2024-spring-compsci-184-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 184
-                    </a>
-                  </td>
-                  <td>Foundations of Computer Graphics</td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <th rowspan="3">Fall 2023</th>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2023-fall-compsci-c191-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI C191
-                    </a>
-                  </td>
-                  <td>Introduction to Quantum Computing</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2023-fall-econ-c110-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      ECON C110
-                    </a>
-                  </td>
-                  <td>Game Theory in the Social Sciences</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2023-fall-music-30-1-lec-1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      MUSIC 30
-                    </a>
-                  </td>
-                  <td>Computational Creativity for Music and the Arts</td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <th rowspan="4">Spring 2023</th>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2023-spring-compsci-162-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 162
-                    </a>
-                  </td>
-                  <td>Operating Systems and System Programming</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2023-spring-compsci-195-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 195
-                    </a>
-                  </td>
-                  <td>Social Implications of Computer Technology</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2023-spring-hum-120-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      HUM 120
-                    </a>
-                  </td>
-                  <td>Entrepreneurship for All: An Insiders' Guide to Startups</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2023-spring-ugba-105-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      UGBA 105
-                    </a>
-                  </td>
-                  <td>Leading People</td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <th rowspan="3">Fall 2022</th>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2022-fall-compsci-161-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 161
-                    </a>
-                  </td>
-                  <td>Computer Security</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2022-fall-compsci-170-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 170
-                    </a>
-                  </td>
-                  <td>Efficient Algorithms and Intractable Problems</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2022-fall-linguis-100-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      LINGUIS 100
-                    </a>
-                  </td>
-                  <td>Introduction to Linguistic Science</td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <th rowspan="4">Spring 2022</th>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2022-spring-compsci-186-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 186
-                    </a>
-                  </td>
-                  <td>Introduction to Database Systems</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2022-spring-compsci-188-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 188
-                    </a>
-                  </td>
-                  <td>Introduction to Artificial Intelligence</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2022-spring-compsci-375-001-dis-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 375
-                    </a>
-                  </td>
-                  <td>Teaching Techniques for Computer Science</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2022-spring-eleng-120-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      ELENG 120
-                    </a>
-                  </td>
-                  <td>Signals and Systems</td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <th rowspan="4">Fall 2021</th>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2021-fall-asamst-150-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      ASAMST 150
-                    </a>
-                  </td>
-                  <td>Gender and Generation in Asian American Families</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2021-fall-compsci-61c-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 61C
-                    </a>
-                  </td>
-                  <td>
-                    Great Ideas of Computer Architecture (Machine Structures)
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2021-fall-compsci-70-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 70
-                    </a>
-                  </td>
-                  <td>Discrete Mathematics and Probability Theory</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2021-fall-philos-3-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      PHILOS 3
-                    </a>
-                  </td>
-                  <td>The Nature of Mind</td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <th rowspan="4">Spring 2021</th>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2021-spring-colwrit-r4b-004-sem-004"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COLWRIT R4B
-                    </a>
-                  </td>
-                  <td>Reading, Composition, and Research</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2021-spring-compsci-61b-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 61B
-                    </a>
-                  </td>
-                  <td>Data Structures</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2021-spring-eecs-16b-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      EECS 16B
-                    </a>
-                  </td>
-                  <td>Designing Information Devices and Systems II</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2021-spring-sociol-3ac-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      SOCIOL 3AC
-                    </a>
-                  </td>
-                  <td>Principles of Sociology: American Cultures</td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <th rowspan="5">Fall 2020</th>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2020-fall-compsci-61a-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      COMPSCI 61A
-                    </a>
-                  </td>
-                  <td>The Structure and Interpretation of Computer Programs</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2020-fall-eecs-16a-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      EECS 16A
-                    </a>
-                  </td>
-                  <td>Designing Information Devices and Systems I</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2020-fall-math-54-002-lec-002"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      MATH 54
-                    </a>
-                  </td>
-                  <td>Linear Algebra and Differential Equations</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2020-fall-physics-5b-001-lec-001"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      PHYSICS 5B
-                    </a>
-                  </td>
-                  <td>Introductory Electromagnetism, Waves, and Optics</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a
-                      href="https://classes.berkeley.edu/content/2020-fall-physics-5bl-101-lab-101"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      PHYSICS 5BL
-                    </a>
-                  </td>
-                  <td>Introduction to Experimental Physics I</td>
-                </tr>
-              </tbody>
-            </table>
-            <hr></hr>
-            <h2>Literature</h2>
-            Here are some books that I've recently read and enjoyed:
-            <ul>
-              <li>
-                <a
-                  href="https://www.goodreads.com/book/show/38212124-nomadland"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Nomadland
-                </a>{" "}
-                by Jessica Bruder
-              </li>
-              <li>
-                <a
-                  href="https://www.goodreads.com/book/show/9126253-the-blame-game"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  The Blame Game
-                </a>{" "}
-                by Ben Dattner {"&"} Darren Dahl
-              </li>
-              <li>
-                <a
-                  href="https://www.goodreads.com/book/show/31670196-scale"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Scale
-                </a>{" "}
-                by Geoffrey West
-              </li>
-              <li>
-                <a
-                  href="https://www.goodreads.com/book/show/1078.The_Good_Earth"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  The Good Earth
-                </a>{" "}
-                by Pearl S. Buck
-              </li>
-            </ul>
-            <hr></hr>
-            <h2>Contact</h2>
-            <p>
-              My preferred method of contact is email: epark2 (at) berkeley (dot) edu.
-            </p>
+                <div className="flex gap-2">
+                  <a
+                    className="btn btn-sm btn-primary"
+                    href="https://github.com/epark272"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    className="btn btn-sm btn-outline"
+                    href="https://www.linkedin.com/in/edward-park-8340301a5/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        }
-      />
-    </div>
+
+          <div className="card bg-base-100 shadow-md border border-base-300">
+            <div className="card-body space-y-2">
+              <p className="badge badge-secondary badge-outline w-fit">Highlights</p>
+              <ul className="space-y-2 text-sm leading-relaxed">
+                <li>Teaching data structures & computer architecture</li>
+                <li>Designing resilient systems and developer tooling</li>
+                <li>Exploring humane, minimalist product design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      }
+      contentMain={
+        <div className="space-y-10">
+          <section className="hero bg-gradient-to-r from-base-300/50 via-base-200 to-base-200 rounded-3xl border border-base-300 shadow-xl">
+            <div className="hero-content flex-col lg:flex-row gap-10">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="badge badge-primary badge-outline">Engineer • Educator</div>
+                  <div className="badge badge-outline">Berkeley EECS</div>
+                </div>
+                <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+                  Hi, I'm Edward. I build calm, useful software.
+                </h1>
+                <p className="text-base md:text-lg text-base-content/80 max-w-3xl">
+                  Recent UC Berkeley EECS graduate focused on data structures, teaching,
+                  and thoughtful product engineering. I enjoy working on systems that feel
+                  reliable, clear, and humane.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    className="btn btn-primary"
+                    href="mailto:epark2@berkeley.edu"
+                  >
+                    Get in touch
+                  </a>
+                  <a
+                    className="btn btn-outline"
+                    href="https://github.com/epark272/epark272.github.io"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View this site on GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="space-y-4">
+            <div className="flex items-center justify-between">
+              <h2 className="text-2xl font-semibold">Experience</h2>
+              <span className="text-sm text-base-content/60">Teaching, engineering, and product work</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {experience.map((item) => (
+                <div
+                  key={item.title}
+                  className="card bg-base-100 border border-base-300 shadow-md hover:shadow-lg transition-shadow"
+                >
+                  <div className="card-body space-y-2">
+                    <div className="flex items-center justify-between gap-2">
+                      <h3 className="card-title text-lg">{item.title}</h3>
+                      <a
+                        className="link link-primary text-sm"
+                        href={item.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {item.linkLabel}
+                      </a>
+                    </div>
+                    <p className="text-sm text-base-content/70">{item.period}</p>
+                    <p className="text-sm leading-relaxed text-base-content/80">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="card bg-base-100 border border-base-300 shadow-xl">
+            <div className="card-body space-y-4">
+              <div className="flex items-center justify-between">
+                <h2 className="card-title text-2xl">Coursework</h2>
+                <span className="badge badge-outline">Berkeley EECS</span>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full text-left">
+                  <thead>
+                    <tr>
+                      <th>Term</th>
+                      <th>Class</th>
+                      <th>Title</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowSpan="2">Spring 2024</th>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2024-spring-compsci-168-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 168
+                        </a>
+                      </td>
+                      <td>Introduction to the Internet: Architecture and Protocols</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2024-spring-compsci-184-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 184
+                        </a>
+                      </td>
+                      <td>Foundations of Computer Graphics</td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <th rowSpan="3">Fall 2023</th>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2023-fall-compsci-c191-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI C191
+                        </a>
+                      </td>
+                      <td>Introduction to Quantum Computing</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2023-fall-compsci-161-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 161
+                        </a>
+                      </td>
+                      <td>Computer Security</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2023-fall-compsci-194-198-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 194-198
+                        </a>
+                      </td>
+                      <td>Justice Through Code</td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <th rowSpan="4">Spring 2023</th>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2023-spring-compsci-162-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 162
+                        </a>
+                      </td>
+                      <td>Operating Systems and System Programming</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2023-spring-compsci-170-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 170
+                        </a>
+                      </td>
+                      <td>Efficient Algorithms and Intractable Problems</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2023-spring-compsci-190-198-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 190-198
+                        </a>
+                      </td>
+                      <td>UEP: The Art of Teaching Computer Science</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2023-spring-compsci-195-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 195
+                        </a>
+                      </td>
+                      <td>Social Implications of Computer Technology</td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <th rowSpan="3">Fall 2022</th>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2022-fall-compsci-61c-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 61C
+                        </a>
+                      </td>
+                      <td>The Great Ideas of Computer Architecture (Machine Structures)</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2022-fall-compsci-170-001-lec-002"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 170
+                        </a>
+                      </td>
+                      <td>Efficient Algorithms and Intractable Problems</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2022-fall-math-53-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          MATH 53
+                        </a>
+                      </td>
+                      <td>Multivariable Calculus</td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <th rowSpan="4">Spring 2022</th>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2022-spring-compsci-61b-002-lec-002"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 61B
+                        </a>
+                      </td>
+                      <td>Data Structures and Algorithms</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2022-spring-compsci-70-002-lec-002"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 70
+                        </a>
+                      </td>
+                      <td>Discrete Mathematics and Probability Theory</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2022-spring-eecs-16b-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          EECS 16B
+                        </a>
+                      </td>
+                      <td>Designing Information Devices and Systems II</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2022-spring-math-110-002-lec-002"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          MATH 110
+                        </a>
+                      </td>
+                      <td>Linear Algebra</td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <th rowSpan="4">Fall 2021</th>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2021-fall-compsci-61a-002-lec-002"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 61A
+                        </a>
+                      </td>
+                      <td>The Structure and Interpretation of Computer Programs</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2021-fall-compsci-47b-001-lab-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 47B
+                        </a>
+                      </td>
+                      <td>Completion of Work in Data Structures</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2021-fall-civeng-c30-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          CIVENG C30
+                        </a>
+                      </td>
+                      <td>
+                        Basic Mechanics and Selected Topics in Civil and Environmental Engineering
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2021-fall-eps-80-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          EPS 80
+                        </a>
+                      </td>
+                      <td>Environmental Earth System Science</td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <th rowSpan="4">Spring 2021</th>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2021-spring-compsci-10-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 10
+                        </a>
+                      </td>
+                      <td>The Beauty and Joy of Computing</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2021-spring-english-180l-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          ENGLISH 180L
+                        </a>
+                      </td>
+                      <td>Short Fiction</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2021-spring-psych-2-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          PSYCH 2
+                        </a>
+                      </td>
+                      <td>Principles of Learning</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2021-spring-spanish-1-002-lec-002"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          SPANISH 1
+                        </a>
+                      </td>
+                      <td>Elementary Spanish</td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <th rowSpan="5">Fall 2020</th>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2020-fall-compsci-61a-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          COMPSCI 61A
+                        </a>
+                      </td>
+                      <td>The Structure and Interpretation of Computer Programs</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2020-fall-eecs-16a-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          EECS 16A
+                        </a>
+                      </td>
+                      <td>Designing Information Devices and Systems I</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2020-fall-math-54-002-lec-002"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          MATH 54
+                        </a>
+                      </td>
+                      <td>Linear Algebra and Differential Equations</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2020-fall-physics-5b-001-lec-001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          PHYSICS 5B
+                        </a>
+                      </td>
+                      <td>Introductory Electromagnetism, Waves, and Optics</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a
+                          href="https://classes.berkeley.edu/content/2020-fall-physics-5bl-101-lab-101"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          PHYSICS 5BL
+                        </a>
+                      </td>
+                      <td>Introduction to Experimental Physics I</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+      }
+      contentRight={
+        <div className="space-y-4">
+          <div className="card bg-base-100 shadow-md border border-base-300">
+            <div className="card-body space-y-3">
+              <h3 className="card-title text-lg">Reading lately</h3>
+              <ul className="space-y-2 text-sm">
+                {books.map((book) => (
+                  <li key={book.title} className="flex flex-col">
+                    <a
+                      className="link link-hover"
+                      href={book.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {book.title}
+                    </a>
+                    <span className="text-base-content/60">{book.author}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="card bg-base-100 shadow-md border border-base-300">
+            <div className="card-body space-y-3">
+              <h3 className="card-title text-lg">Looking for</h3>
+              <ul className="space-y-2 text-sm leading-relaxed">
+                <li>Opportunities to teach and mentor</li>
+                <li>Systems work that values clarity over complexity</li>
+                <li>Teams that care about accessibility and calm design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      }
+    />
   );
 }
 
