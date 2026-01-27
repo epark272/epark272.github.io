@@ -1,3 +1,4 @@
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { Page } from "../../common/page/Page";
 
 const resources = [
@@ -26,12 +27,12 @@ function Resources() {
     <Page
       contentMain={
         <div className="space-y-8">
-          <section className="card bg-base-100 border border-base-300 shadow-xl">
+          <section className="card bg-base-100 border border-base-300 shadow-sm rounded-lg">
             <div className="card-body space-y-2">
               <p className="badge badge-outline w-fit">Resources</p>
               <h1 className="card-title text-3xl">Tools and links</h1>
               <p className="text-base-content/80 leading-relaxed">
-                A handful of things I maintain or reach for often. If you’re looking for something
+                A handful of things I maintain or reach for often. If you're looking for something
                 specific, feel free to reach out.
               </p>
             </div>
@@ -41,7 +42,7 @@ function Resources() {
             {resources.map((item) => (
               <div
                 key={item.title}
-                className="card bg-base-100 border border-base-300 shadow-md hover:shadow-lg transition-shadow"
+                className="card bg-base-100 border border-base-300 shadow-sm hover:shadow-md transition-shadow rounded-lg"
               >
                 <div className="card-body space-y-3">
                   <div className="flex items-center justify-between">
@@ -51,12 +52,15 @@ function Resources() {
                   <p className="text-sm text-base-content/80 leading-relaxed">{item.description}</p>
                   <div className="card-actions justify-start">
                     <a
-                      className="btn btn-primary btn-sm"
+                      className="btn btn-primary btn-sm inline-flex items-center gap-2"
                       href={item.link}
                       target={item.link.startsWith("mailto:") ? "_self" : "_blank"}
                       rel={item.link.startsWith("mailto:") ? undefined : "noreferrer"}
                     >
-                      {item.action}
+                      <span>{item.action}</span>
+                      {!item.link.startsWith("mailto:") && (
+                        <FaExternalLinkAlt className="text-xs" aria-hidden="true" />
+                      )}
                     </a>
                   </div>
                 </div>
